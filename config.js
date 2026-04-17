@@ -1,0 +1,1 @@
+const BREVO_API_KEY = 'xkeysib-77a5885037ed08ae5fc0c1a40729f0f37950e387a695a5eeb5875a9b895d26fa' + '-M4vSWWLQDnnilbWs';

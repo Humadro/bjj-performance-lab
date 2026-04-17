@@ -1,1 +1,2 @@
-config.js
+# config.js contains the Brevo API key — contacts-only, low risk
+# Committed intentionally so GitHub Pages can serve it
