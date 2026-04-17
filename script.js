@@ -61,10 +61,19 @@
     btn.disabled    = true;
     btn.textContent = 'Sending…';
 
-    fetch('https://formspree.io/f/mqewqkwr', {
-      method:  'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body:    JSON.stringify({ name, email }),
+    fetch('https://api.brevo.com/v3/contacts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'api-key': BREVO_API_KEY,
+      },
+      body: JSON.stringify({
+        email: email,
+        attributes: { FIRSTNAME: name },
+        listIds: [2],   // ← el número de tu lista (lo ves en Contacts → Lists)
+        updateEnabled: true,
+      }),
     })
       .then((r) => {
         if (r.ok) {
