@@ -521,6 +521,18 @@ a   { color: inherit; text-decoration: none; }
   margin-bottom: 16px;
   color: rgba(255,255,255,.3);
 }
+.footer__social {
+  margin-bottom: 12px;
+}
+.footer__ig-link {
+  font-size: .8125rem;
+  color: rgba(255,255,255,.5);
+  text-decoration: none;
+  transition: color .2s;
+}
+.footer__ig-link:hover {
+  color: #fff;
+}
 .footer__copy {
   font-size: .8125rem;
 }
