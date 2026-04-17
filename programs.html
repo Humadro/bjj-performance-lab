@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs & Pricing — BJJ Performance Lab</title>
+  <meta name="description" content="Strength and conditioning programs for BJJ practitioners who want to train pain-free for years. Two options: self-guided or 1-on-1 coaching." />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════ -->
+  <nav class="site-nav">
+    <div class="container site-nav__inner">
+      <a href="index.html" class="site-nav__logo">
+        <img src="logo.svg" alt="BJJ Performance Lab" class="site-nav__logo-img" />
+      </a>
+      <a href="index.html" class="site-nav__pill">Free BJJ Longevity Kit →</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="programs-hero">
+    <div class="container">
+      <div class="programs-hero__eyebrow fade-in">Programs &amp; Pricing</div>
+      <h1 class="programs-hero__headline fade-in delay-1">
+        Built for grapplers<br class="br-desktop" />
+        who train to keep training.
+      </h1>
+      <p class="programs-hero__sub fade-in delay-2">
+        No competition prep. No peaking cycles. Strength work that fits around
+        your BJJ schedule — and keeps you on the mats long-term.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRICING
+  ═══════════════════════════════════════════ -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="section__eyebrow text-center reveal">Choose your path</div>
+      <h2 class="section__title text-center reveal">Simple, transparent pricing.</h2>
+      <p class="pricing-intro reveal">
+        Two options based on how much support you need. No upsells. No confusing tiers.
+      </p>
+
+      <div class="plan-grid">
+
+        <!-- ── Plan 1 ── -->
+        <div class="plan-card reveal">
+          <div class="plan-card__header">
+            <p class="plan-card__name">The BJJ Longevity Blueprint</p>
+            <p class="plan-card__type">Self-guided · 8 weeks</p>
+          </div>
+
+          <div class="plan-price">
+            <span class="plan-price__amount">$30</span>
+            <span class="plan-price__period">one-time</span>
+          </div>
+
+          <p class="plan-card__desc">
+            A complete 8-week S&amp;C program you run on your own, at your pace.
+            Built specifically for recreational grapplers — not athletes chasing a podium.
+          </p>
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature__check">✓</span>
+              <span>Full 8-week strength &amp; conditioning program — 2 sessions/week, 45 min max</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check">✓</span>
+              <span>Scheduled around your BJJ days, never against them</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check">✓</span>
+              <span>Targets the 5 zones grapplers break down in: hips, knees, shoulders, elbows, lower back</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check">✓</span>
+              <span>Builds your aerobic base without flattening you for class</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check">✓</span>
+              <span>RPE-based loading — no barbell, no 1RM testing required</span>
+            </li>
+            <li class="plan-feature plan-feature--highlight">
+              <span class="plan-feature__check plan-feature__check--green">✓</span>
+              <span><strong>Free 30-min Review Session at week 8</strong> — plan what comes next, don't just stop</span>
+            </li>
+          </ul>
+
+          <div class="plan-addon">
+            <span class="plan-addon__plus">+</span>
+            <span>Need answers mid-program? Add a 1-on-1 Q&amp;A call any time — <strong>$10</strong></span>
+          </div>
+
+          <a href="https://www.paypal.com/paypalme/TUUSUARIO/30" target="_blank" rel="noopener" class="btn btn--dark btn--full plan-cta">Get the Blueprint — $30</a>
+        </div>
+
+        <!-- ── Plan 2 ── -->
+        <div class="plan-card plan-card--featured reveal" style="transition-delay: .14s;">
+          <div class="plan-badge">Recommended</div>
+
+          <div class="plan-card__header">
+            <p class="plan-card__name">Custom Longevity Coaching</p>
+            <p class="plan-card__type">1-on-1 coaching</p>
+          </div>
+
+          <div class="plan-price-toggle" role="group" aria-label="Billing period">
+            <button class="price-toggle__btn price-toggle__btn--active" data-plan="monthly">Monthly</button>
+            <button class="price-toggle__btn" data-plan="upfront">Pay upfront</button>
+          </div>
+
+          <div class="plan-price" id="price-monthly">
+            <span class="plan-price__amount">$47</span>
+            <span class="plan-price__period">/ month &nbsp;·&nbsp; min. 2 months</span>
+          </div>
+          <div class="plan-price" id="price-upfront" hidden>
+            <span class="plan-price__amount">$100</span>
+            <span class="plan-price__period">/ 2 months, paid upfront</span>
+            <span class="plan-price__save">Save $12</span>
+          </div>
+
+          <p class="plan-card__desc">
+            The same foundation, built specifically around <em>you</em> — your injury history,
+            your schedule, your level. With weekly check-ins to keep it calibrated.
+          </p>
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature__check plan-feature__check--green">✓</span>
+              <span>Everything in The BJJ Longevity Blueprint</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check plan-feature__check--green">✓</span>
+              <span>Program adapted to your specific injuries, schedule and training age</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check plan-feature__check--green">✓</span>
+              <span>Weekly 1-on-1 check-in — adjust loads and flag issues before they become problems</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check plan-feature__check--green">✓</span>
+              <span>Direct messaging between sessions for quick questions</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check plan-feature__check--green">✓</span>
+              <span>Ongoing fatigue monitoring — no more guessing when it's safe to push</span>
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature__check plan-feature__check--green">✓</span>
+              <span>Program revisions as needed — no extra charge, no waiting</span>
+            </li>
+          </ul>
+
+          <a href="https://www.paypal.com/paypalme/TUUSUARIO/47" target="_blank" rel="noopener" class="btn btn--primary btn--full plan-cta" id="featured-cta" data-url-monthly="https://www.paypal.com/paypalme/TUUSUARIO/47" data-url-upfront="https://www.paypal.com/paypalme/TUUSUARIO/100">
+            Start Custom Coaching — $47/mo →
+          </a>
+          <p class="plan-card__footnote">Intake call included. Cancel after 2 months.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       GUARANTEE
+  ═══════════════════════════════════════════ -->
+  <section class="section section--white">
+    <div class="container container--narrow">
+      <div class="guarantee-box reveal">
+        <div class="guarantee-mark">◈</div>
+        <div>
+          <h3 class="guarantee-title">30-day money-back guarantee</h3>
+          <p class="guarantee-body">
+            If you don't feel a measurable difference in how you move and recover
+            in the first month, you get a full refund. No questions asked, no hoops to jump through.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════════ -->
+  <section class="section section--light">
+    <div class="container container--narrow">
+      <div class="section__eyebrow reveal">Common questions</div>
+      <h2 class="section__title reveal">Before you decide</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            I already have a nagging injury — will this make it worse?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>The Blueprint is built with joint longevity as the primary design constraint, not performance output. Every exercise selection prioritises load tolerance and tissue resilience over intensity. If you have a specific issue, the Custom Coaching plan lets us work around it directly from week one — no generic modifications, just a program built for your actual situation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            Do I need a gym or special equipment?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>No barbell required. The program is designed around equipment most people already have access to — dumbbells, resistance bands, and bodyweight movements. If you train at a fully-equipped gym, there are progressions for that too. Either way works.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            I train BJJ 4–5x a week. Is there actually room for this?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>That's exactly who this is built for. The program caps at 2 strength sessions per week, never scheduled on your BJJ or open mat days. Sessions run 45 minutes max. The entire premise is that BJJ comes first — always. If you train 5 days on the mats, there are still 2 days to build the physical base that supports it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            What's the actual difference between the two plans?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>The Blueprint is a well-structured program you follow independently — it works for most recreational grapplers without modification. Custom Coaching starts from the same foundation, but adapts every variable to your specific context: injury history, schedule, training age, and goals. You also get weekly check-ins to course-correct in real time. If you're managing a chronic issue or want a coach in your corner, that's when Custom Coaching pays for itself.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            What happens after the 8 weeks are done?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Both plans include a free Review Session at the end of week 8. We go over what changed, what's still a work in progress, and map out what comes next — whether that's a follow-on program phase, continued coaching, or just a clear maintenance plan. You won't be left with a document and no direction.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FINAL CTA
+  ═══════════════════════════════════════════ -->
+  <section class="section section--cta">
+    <div class="container container--narrow text-center">
+      <div class="section__eyebrow reveal" style="color: rgba(255,255,255,.35);">Not ready to commit?</div>
+      <h2 class="section__title reveal">Start with the free kit.</h2>
+      <p class="section__body reveal" style="margin-inline: auto;">
+        The BJJ Longevity Kit covers the full framework behind both programs.
+        Download it free, put it into practice, and decide when you're ready.
+      </p>
+      <a href="index.html" class="btn btn--primary reveal programs-final-cta">Get the Free Longevity Kit →</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <p class="footer__brand">BJJ Performance Lab</p>
+      <p class="footer__tagline">Train smarter. Roll longer.</p>
+      <p class="footer__copy">© 2026 BJJ Performance Lab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="programs.js"></script>
+</body>
+</html>
